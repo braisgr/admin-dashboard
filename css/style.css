@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+}
+
+.nav-panel{
+  background-color: skyblue;
+}
+
+.menu-list,
+.settings-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-link,
+.settings-link,
+.logo-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-img{
+  width: 40px;
+}
+
+.menu-img{
+  width: 20px;
+}
+
+.nav-panel{
+  padding: 20px;
+  display: grid;
+  align-content: start;
+  row-gap: 30px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-link{
+  font-size: 32px;
+}
+
+.menu-link,
+.settings-link{
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 24px;
+}
+
+.user-panel{
+  display: grid;
+}
