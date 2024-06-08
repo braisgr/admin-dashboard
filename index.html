@@ -1,68 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <div class="container">
-    <nav class="nav-panel">
-      <div class="logo-container">
-        <img src="assets/view-dashboard.svg" alt="Dashboard logo" class="logo-img">
-        <a href="#" class="logo-link">Dashboard</a>
-      </div>
-      <div class="menu-container">
-        <ul class="menu-list">
-          <li class="menu-item"><a href="#" class="menu-link"><img src="assets/home.svg" class="menu-img">Home</a></li>
-          <li class="menu-item"><a href="#" class="menu-link"><img src="assets/card-account-details-outline.svg" class="menu-img">Profile</a></li>
-          <li class="menu-item"><a href="#" class="menu-link"><img src="assets/message-reply.svg" class="menu-img">Messages</a></li>
-          <li class="menu-item"><a href="#" class="menu-link"><img src="assets/clock-time-three.svg" class="menu-img">History</a></li>
-          <li class="menu-item"><a href="#" class="menu-link"><img src="assets/file-multiple.svg" class="menu-img">Tasks</a></li>
-          <li class="menu-item"><a href="#" class="menu-link"><img src="assets/account-group.svg" class="menu-img">Communities</a></li>
-        </ul>
-      </div>
-      <div class="settings-container">
-        <ul class="settings-list">
-          <li class="settings-item"><a href="#" class="settings-link"><img src="assets/cog.svg" class="menu-img">Settings</a></li>
-          <li class="settings-item"><a href="#" class="settings-link"><img src="assets/message-question.svg" class="menu-img">Support</a></li>
-          <li class="settings-item"><a href="#" class="settings-link"><img src="assets/shield-check.svg" class="menu-img">Privacy</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="user-panel">
-      <header class="header">
-        <div class="user-info-container">
-          <div class="searchbar-container">
-            <img src="assets/magnify.svg" class="action-icon">
-            <input type="text" id="searchbar">
-          </div>
-          <div class="user-greeting-container">
-            <img src="assets/profile.png" class="profile-img">
-            <div class="greeting">
-              <p>Hi there,</p>
-              <p>Brais García (@braisgr)</p>
-            </div>
-          </div>
-        </div>
-        <div class="user-buttons-container">
-          <div class="user-notifications">
-            <img src="assets/bell-ring-outline.svg" class="action-icon">
-            <img src="assets/profile.png" class="profile-img">
-            <p>Brais García</p>
-          </div>
-          <div class="user-buttons">
-            <a href="#" class="user-button">New</a>
-            <a href="#" class="user-button">Upload</a>
-            <a href="#" class="user-button">Share</a>
-          </div>
-        </div>
-      </header>
-      <main class="content">
 
-      </main>
+<body>
+  <nav class="bg-primary">
+    <ul>
+      <li>
+        <img src="assets/icons/view-dashboard.svg" class="icon-medium">
+        <h3 class="fs-24">Dashboard</h3>
+      </li>
+      <li>
+        <img src="assets/icons/home.svg" class="icon-small">
+        <h4 class="fs-18">Home</h4>
+      </li>
+      <li>
+        <img src="assets/icons/card-account-details-outline.svg" class="icon-small">
+        <h4 class="fs-18">Profile</h4>
+      </li>
+      <li>
+        <img src="assets/icons/message-reply.svg" class="icon-small">
+        <h4 class="fs-18">Messages</h4>
+      </li>
+      <li>
+        <img src="assets/icons/clock-time-three.svg" class="icon-small">
+        <h4 class="fs-18">History</h4>
+      </li>
+      <li>
+        <img src="assets/icons/file-multiple.svg" class="icon-small">
+        <h4 class="fs-18">Tasks</h4>
+      </li>
+      <li>
+        <img src="assets/icons/account-group.svg" class="icon-small">
+        <h4 class="fs-18">Communities</h4>
+      </li>
+      <li>
+        <img src="assets/icons/cog.svg" class="icon-small">
+        <h4 class="fs-18">Settings</h4>
+      </li>
+      <li>
+        <img src="assets/icons/message-question.svg" class="icon-small">
+        <h4 class="fs-18">Support</h4>
+      </li>
+      <li>
+        <img src="assets/icons/shield-check.svg" class="icon-small">
+        <h4 class="fs-18">Privacy</h4>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div>
+      <img src="assets/icons/magnify.svg" class="icon-small">
+      <input type="text">
     </div>
-  </div>
+    <div>
+      <img src="assets/images/profile.png" class="img-medium">
+      <div class="bold-600">
+        <p>Hi there,</p>
+        <p class="fs-24">Brais García (@braisgr)</p>
+      </div>
+    </div>
+    <div>
+      <img src="assets/icons/bell-ring-outline.svg" class="icon-small">
+      <img src="assets/images/profile.png" class="img-small">
+      <p class="bold-600 fs-18">Brais García</p>
+    </div>
+    <div>
+      <a href="#" class="bold-600">New</a>
+      <a href="#" class="bold-600">Upload</a>
+      <a href="#" class="bold-600">Share</a>
+    </div>
+  </header>
+  <main class="bg-secondary">
+    <h4 class="fs-24">Your Projects</h4>
+    <div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Super Cool Project</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Money Maker</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Less Cool Project</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium! laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Impossible App</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Easy Peasy App</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Ad Blocker</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Wave Predictor Project</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Surf Spot Location App</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h5 class="fs-18">Weather App</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab voluptate fugit amet, vitae, deserunt
+            voluptatibus excepturi nisi cum accusantium exercitationem quia? Fugit omnis vel laboriosam! Rem deleniti id
+            laudantium!</p>
+        </div>
+        <div>
+          <img src="assets/icons/star-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/eye-plus-outline.svg" class="icon-small">
+          <img src="assets/icons/share-variant-outline.svg" class="icon-small">
+        </div>
+      </div>
+    </div>
+  </main>
+  <aside class="bg-secondary">
+    <div>
+      <h4 class="fs-24">Announcements</h4>
+      <div class="aside-card">
+        <h5>Site Maintenance</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat temporibus natus ab dolor inventore pariatur
+          architecto.</p>
+        <hr>
+        <h5>Community Share Day</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat temporibus natus ab dolor inventore pariatur
+          architecto.</p>
+        <hr>
+        <h5>Updated Privacy Policy</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat temporibus natus ab dolor inventore pariatur
+          architecto.</p>
+      </div>
+    </div>
+    <div>
+      <h4 class="fs-24">Trending</h4>
+      <div class="aside-card">
+        <div>
+          <img src="assets/images/engineer.png" class="img-small">
+          <div>
+            <p class="bold-600">@tegan</p>
+            <p>World Peace Builder</p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/profile.png" class="img-small">
+          <div>
+            <p class="bold-600">@braisgr</p>
+            <p>Super Cool Project</p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/clown.png" class="img-small">
+          <div>
+            <p class="bold-600">@kendall</p>
+            <p>Life Changing App</p>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/user.png" class="img-small">
+          <div>
+            <p class="bold-600">@alex</p>
+            <p>No Traffic Maker</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
 </body>
+
 </html>
